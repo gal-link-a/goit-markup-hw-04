@@ -416,9 +416,8 @@ img {
 .clients-link:focus,
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
-  color: var(--accent-text-color);
   border-color: var(--accent-text-color);
-  fill: currentColor var(--accent-text-color);
+  fill: #2196f3;
 }
 
 /* =============== END CLIENTS =============== */
