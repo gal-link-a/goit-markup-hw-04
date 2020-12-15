@@ -20,6 +20,7 @@ html {
 body {
   font-family: var(--main-font-family);
   margin: 0;
+  color: var(--main-text-color: #212121);
 }
 
 .list {
@@ -318,7 +319,7 @@ img {
 .our-team-card {
   background: var(--reserve-text-color);
   width: 270px;
-  height: 368px;
+  height: 428px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -369,10 +370,35 @@ img {
 }
 
 .our-team-desc {
-  padding: 30px 10px;
+  /* padding: 30px 10px; */
+  margin-top: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
-/* =============== END TEAMY ===============*/
+.our-team-social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.our-team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.our-team-social-link:hover,
+.our-team-social-:hover {
+  background-color: var(--accent-text-color);
+  color: var(--reserve-text-color);
+}
+
+/* =============== END TEAM ===============*/
 
 /* =============== CLIENTS =============== */
 
@@ -407,17 +433,14 @@ img {
   height: 90px;
   border: 1px solid;
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients-link:hover,
-.clients-link:focus,
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
+.clients-link:focus {
+  color: var(--accent-text-color);
   border-color: var(--accent-text-color);
-  fill: #2196f3;
+}
+.clients-logo {
+  fill: currentColor;
 }
 
 /* =============== END CLIENTS =============== */
@@ -520,8 +543,6 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--reserve-text-color);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -617,7 +638,7 @@ img {
 }
 
 .card-wrap {
-  padding: 20px, 24px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
