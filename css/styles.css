@@ -79,7 +79,6 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 /* =============== HEADER ===============*/
 
 .logo-left-part {
@@ -159,7 +158,9 @@ img {
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .header-mail-link:hover,
-.header-mail-link:focus {
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
   color: var(--accent-text-color);
 }
 
@@ -170,6 +171,8 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
 }
@@ -222,7 +225,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   margin: 0 auto;
-
+  padding: 10px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: var(--reserve-text-color);
   background: var(--accent-text-color);
 }
@@ -322,7 +328,7 @@ img {
 
 .our-team-card {
   background: var(--reserve-text-color);
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -370,19 +376,22 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
 
 .our-team-desc {
-  /* padding: 30px 10px; */
-  margin-top: 30px;
+  padding: 30px 10px;
+  /* margin-top: 30px;
   padding-right: 32px;
-  padding-left: 32px;
+  padding-left: 32px; */
 }
 
 .our-team-social-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 16px;
+  margin: 0 auto;
+  width: 206px;
+  /* margin-top: 16px; */
   /* color: var(--secondary-text-color); */
 }
 
@@ -604,19 +613,29 @@ img {
 
 /*gallery*/
 
-.pojects-list {
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.pojects-item-card {
+.projects-item-card {
   background: var(--reserve-text-color);
   margin: 15px;
 }
 
-.pojects-item-card:hover,
-.pojects-item-card:focus {
+/* .projects-item-card:hover,
+.projects-item-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+.card-link {
+  display: inline-block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
